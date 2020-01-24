@@ -39,12 +39,20 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
+SQL is a language used to write relational databases.
 
 - [ ] Why do tables need a `primary key`?
+  Every table should have a unique key that differentiates one entry from another.  This is accomplished through the primary key.
 
 - [ ] What is the name given to a table column that references the primary key on another table.
+Foreign Key
 
 - [ ] What do we need in order to have a _many to many_ relationship between two tables.
+I find it helpful to enter the two entities into this madlib:
+
+"A _THING_ONE_ can have many _THING_TWO_s and a _THING_TWO_ can have many _THING_ONE_s."
+
+If it fits, it's probably Many to Many.  Or did this question mean a bridge table?  Not sure.
 
 ## Minimum Viable Product
 
