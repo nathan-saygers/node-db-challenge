@@ -26,9 +26,6 @@ exports.up = function(knex) {
       .inTable('projects')
       .onUpdate('CASCADE')
       .onDelete('CASCADE');
-    tbl.string('task_name', 128)
-      .unique()
-      .notNullable();
     tbl.text('task_description', 255)
       .notNullable();
     tbl.text('task_notes', 255);
@@ -42,7 +39,7 @@ exports.up = function(knex) {
       .unsigned()
       .notNullable()
       .references('id')
-      .inTable('project')
+      .inTable('projects')
       .onUpdate('CASCADE')
       .onDelete('CASCADE')
     tbl.integer('resources_id')

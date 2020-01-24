@@ -1,7 +1,7 @@
 {
-    "name": "node-db4-challenge",
+    "name": "node-db-challenge",
     "version": "1.0.0",
-    "description": "Challenge for Node DB4 Module",
+    "description": "Sprint Challenge for Node DB Module",
     "main": "index.js",
     "scripts": {
         "server": "nodemon index.js"

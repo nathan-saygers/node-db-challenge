@@ -1,8 +1,5 @@
 
 exports.seed = function(knex) {
-  // Deletes ALL existing entries
-  return knex('projects').del()
-    .then(function () {
       // Inserts seed entries
       return knex('projects').insert([
         {
@@ -21,5 +18,4 @@ exports.seed = function(knex) {
           project_description: 'Doin like a sick huge jump over those busses down by the junkyard and blah blah blah', 
           project_complete: false}
       ]);
-    });
 };
